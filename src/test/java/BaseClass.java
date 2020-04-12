@@ -17,7 +17,7 @@ public class BaseClass {
         driver.manage().window().maximize();
     }
 
-   // @AfterMethod
+    @AfterMethod
     public void browserQuit(){
         driver.quit();
     }
