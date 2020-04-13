@@ -30,6 +30,7 @@ public class SignupPage extends BaseClass {
         driver.findElement(By.cssSelector(password)).sendKeys(randomInt+"1A!asaas");
         driver.findElement(By.xpath(checkboxTermsOfUse)).click();
         driver.findElement(By.cssSelector(createAccountBtn)).click();
+        Thread.sleep(2000);
 
         Assert.assertEquals(driver.getCurrentUrl(), "https://kwidos.tk/auth/login");
     }
